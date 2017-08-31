@@ -1,0 +1,199 @@
+/* style.css
+ * This file provides css styles.
+ */
+ @font-face {
+   font-family: HelvNeueforIBM;
+   src: url('HelvNeueRomanItalicforIBM.otf');
+ }
+ body{
+   font-family: HelvNeueforIBM sans-serif;
+ }
+ #search-container{
+   width:80%;
+   padding-left: 30px;
+ }
+ #search{
+   border: none;
+   background-color: inherit;
+   box-shadow: none;
+   border-radius: 0px;
+   color:white;
+   height:auto;
+   width: 800px;
+ }
+ .form-group{
+   border-bottom: 2px solid white;
+ }
+ #search::placeholder, #search{
+   color:white;
+   font-weight: bold;
+   font-size: 30px;
+ }
+ button{
+     border: none;
+     background-color: #3993ff;
+ }
+ #star-btn{
+   background-color: white;
+   border: 0px;
+   float: right;
+   display: block;
+   margin: auto;
+ }
+ #star{
+   width:50px;
+ }
+ #search-btn, #user-btn{
+   background-color: white;
+   border-radius: 50%;
+   border: 0px;
+   padding:10px;
+ }
+ .user{
+   width:50px;
+   float: right;
+   display: block;
+   margin: auto;
+ }
+ #user-icon{
+   width:50px;
+   display: inline;
+ }
+ #star-container{
+   padding-top: 20px;
+ }
+ #navbar{
+   background-color: #3993ff;
+   border:0px;
+ }
+ #navbar-default{
+   border:none
+ }
+ #logo{
+   color:white;
+ }
+ #logo:hover{
+   text-decoration: underline;
+ }
+ .container{
+   margin:5%;
+ }
+ .circle-btn{
+   border-radius: 10px;
+ }
+ #top{
+   margin-top: 25%;
+ }
+ #welcome{
+   color:#3993ff;
+ }
+ #home-btn{
+   border: 3px solid #3993ff;
+   background-color: white;
+   border-radius:0px;
+   color:#3993ff;
+   padding: 15px;
+   padding-left: 50px;
+   padding-right: 50px;
+   font-size: 18px;
+   font-weight: bold;
+   margin-right: 50px;
+ }
+ #home-btn:hover{
+   background-color: #3993ff;
+   color:white;
+ }
+ .title{
+   font-size: 70px;
+   font-weight: bold;
+   padding-bottom: 30px;
+   margin-top: 20px;
+ }
+ .subhead{
+   font-size: 30px;
+   font-weight: bold;
+   padding-bottom: 10px;
+ }
+ #saved, #glossary{
+   color:#3993ff;
+   font-size: 50px;
+   margin-top: 300px;
+ }
+ .body, .sfl{
+   font-size: 18px;
+ }
+ .sfl{
+   margin-top: 50px;
+   text-align: right;
+ }
+.box{
+  margin: 100px auto;
+  width: 300px;
+  height: 50px;
+	float: left;
+}
+
+#label{
+	float:left;
+}
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+		float: right;
+    cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #3e8e41;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+	float: right;
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+#welcome{
+	background-color: white;
+	text-align: left;
+}
+#welcome-description{
+margin-bottom: 40px;
+}
+
+
+ul {
+	list-style-type: none;
+	padding:0
+}

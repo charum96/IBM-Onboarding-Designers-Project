@@ -1,0 +1,7 @@
+---
+applications:
+- name:    mini-project-xLab-interns
+  host:    mini-project-xLab-interns
+  memory:  128M
+  services:
+    - compose-interns-miniProject

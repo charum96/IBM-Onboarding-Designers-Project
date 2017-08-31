@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="stylesheets/style.css">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js" type="text/javascript"></script>
+  <script src="/javascripts/main.js" type="text/javascript"></script>
+
+
+</head>
+<body>
+  <!-- nav bar link: https://www.w3schools.com/bootstrap/bootstrap_navbar.asp -->
+  <nav class="navbar navbar-default navbar-fixed-top" id="navbar-default">
+    <div class="container-fluid" id="navbar">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="container">
+
+        <div class="navbar-header">
+          <a class="navbar-brand" href="index.html" id="logo">IBM Onboarding</a>
+        </div>
+
+          <div class="navbar-form navbar-left" id="search-container">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Search..." id="search">
+              <button onclick="searching()"><span class="glyphicon glyphicon-search" aria-hidden="true" id="search-btn"></span></button>
+            </div>
+          </div>
+
+          <!-- <div class="nav navbar-nav navbar-right"> -->
+          <button><img src="imgs/Chad.png" alt="Chad-icon" class="user"></button>
+          <!-- </div> -->
+
+      </div>
+    </div><!-- /.container-fluid -->
+  </nav>
+
+  <div class="container-fluid">
+    <div class="container">
+      <div class="row" id="top">
+        <div class="col-md-9">
+          <h1 class="title">Git</h1>
+            <h2 class="subhead">Cateogry: Version Control</h2>
+              <p class="body">Git is a version control system used to track changes in computer files and coordinate between developers. Git has built in source control so it can recognize if multiple developers touched the same file and can help them "merge" the file so that the program doesn't break.</p>
+        </div>
+        <div class="col-md-3" id="star-container">
+          <p class="sfl">Save for later</p>
+          <img id="myImage" onclick="changeImage()" src="imgs/star.png">
+
+          <!-- <img onclick="changeImage" src="imgs/star.png" alt="star" id="starImage"> -->
+          <script>
+            function changeImage() {
+              var image = document.getElementById('myImage');
+              if (image.src.match("star.png")) {
+                image.src = "imgs/star-fill.png";
+              } else {
+                image.src = "imgs/star.png";
+              }
+            }
+            </script>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+          <iframe width="100%" height="700px" src="https://www.youtube.com/embed/9GKpbI1siow" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+
+<!-- START SIGMA IMPORTS -->
+<script src="src/sigma.core.js"></script>
+<script src="src/conrad.js"></script>
+<script src="src/utils/sigma.utils.js"></script>
+<script src="src/utils/sigma.polyfills.js"></script>
+<script src="src/sigma.settings.js"></script>
+<script src="src/classes/sigma.classes.dispatcher.js"></script>
+<script src="src/classes/sigma.classes.configurable.js"></script>
+<script src="src/classes/sigma.classes.graph.js"></script>
+<script src="src/classes/sigma.classes.camera.js"></script>
+<script src="src/classes/sigma.classes.quad.js"></script>
+<script src="src/classes/sigma.classes.edgequad.js"></script>
+<script src="src/captors/sigma.captors.mouse.js"></script>
+<script src="src/captors/sigma.captors.touch.js"></script>
+<script src="src/renderers/sigma.renderers.canvas.js"></script>
+<script src="src/renderers/sigma.renderers.webgl.js"></script>
+<script src="src/renderers/sigma.renderers.svg.js"></script>
+<script src="src/renderers/sigma.renderers.def.js"></script>
+<script src="src/renderers/webgl/sigma.webgl.nodes.def.js"></script>
+<script src="src/renderers/webgl/sigma.webgl.nodes.fast.js"></script>
+<script src="src/renderers/webgl/sigma.webgl.edges.def.js"></script>
+<script src="src/renderers/webgl/sigma.webgl.edges.fast.js"></script>
+<script src="src/renderers/webgl/sigma.webgl.edges.arrow.js"></script>
+<script src="src/renderers/canvas/sigma.canvas.labels.def.js"></script>
+<script src="src/renderers/canvas/sigma.canvas.hovers.def.js"></script>
+<script src="src/renderers/canvas/sigma.canvas.nodes.def.js"></script>
+<script src="src/renderers/canvas/sigma.canvas.edges.def.js"></script>
+<script src="src/renderers/canvas/sigma.canvas.edges.curve.js"></script>
+<script src="src/renderers/canvas/sigma.canvas.edges.arrow.js"></script>
+<script src="src/renderers/canvas/sigma.canvas.edges.curvedArrow.js"></script>
+<script src="src/renderers/canvas/sigma.canvas.edgehovers.def.js"></script>
+<script src="src/renderers/canvas/sigma.canvas.edgehovers.curve.js"></script>
+<script src="src/renderers/canvas/sigma.canvas.edgehovers.arrow.js"></script>
+<script src="src/renderers/canvas/sigma.canvas.edgehovers.curvedArrow.js"></script>
+<script src="src/renderers/canvas/sigma.canvas.extremities.def.js"></script>
+<script src="src/renderers/svg/sigma.svg.utils.js"></script>
+<script src="src/renderers/svg/sigma.svg.nodes.def.js"></script>
+<script src="src/renderers/svg/sigma.svg.edges.def.js"></script>
+<script src="src/renderers/svg/sigma.svg.edges.curve.js"></script>
+<script src="src/renderers/svg/sigma.svg.labels.def.js"></script>
+<script src="src/renderers/svg/sigma.svg.hovers.def.js"></script>
+<script src="src/middlewares/sigma.middlewares.rescale.js"></script>
+<script src="src/middlewares/sigma.middlewares.copy.js"></script>
+<script src="src/misc/sigma.misc.animation.js"></script>
+<script src="src/misc/sigma.misc.bindEvents.js"></script>
+<script src="src/misc/sigma.misc.bindDOMEvents.js"></script>
+<script src="src/misc/sigma.misc.drawHovers.js"></script>
+<!-- END SIGMA IMPORTS -->
+<script src="src/parsers/gexf-parser.js"></script>
+<script src="src/parsers/sigma.parsers.gexf.js"></script>
+<script src="src/sigma.plugins.filter/sigma.plugins.filter.js"></script>
+<link href='http://fonts.googleapis.com/css?family=Lato:300,700' rel='stylesheet' type='text/css'>
+<div id="container">
+  <style>
+    body {
+      /*background-color: black;*/
+      color: #333;
+      font-size: 14px;
+      font-family: Lato, sans-serif;
+    }
+    #graph-container {
+      width: 80%;
+      height: 1000px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    #control-pane {
+      width: 230px;
+      background-color: rgb(249, 247, 237);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+      position: relative;
+      top: -1000px;
+    }
+    #control-pane > div {
+      margin: 10px;
+      overflow-x: auto;
+    }
+    .line {
+      clear: both;
+      display: block;
+      width: 100%;
+      margin: 0;
+      padding: 12px 0 0 0;
+      border-bottom: 1px solid #aac789;
+      background: transparent;
+    }
+    h2, h3, h4 {
+      padding: 0;
+      font-variant: small-caps;
+    }
+    .green {
+      color: #437356;
+    }
+    h2.underline {
+      color: #437356;
+      background: #f4f0e4;
+      margin: 0;
+      border-radius: 2px;
+      padding: 8px 12px;
+      font-weight: 700;
+    }
+    .hidden {
+      display: none;
+      visibility: hidden;
+    }
+
+    input[type=range] {
+      width: 160px;
+    }
+  </style>
+  <div id="graph-container"></div>
+  <div id="control-pane">
+    <h2 class="underline">filters</h2>
+
+    <div>
+      <h3>min degree <span id="min-degree-val">0</span></h3>
+      0 <input id="min-degree" type="range" min="0" max="0" value="0"> <span id="max-degree-value">0</span><br>
+    </div>
+    <div>
+      <h3>node category</h3>
+      <select id="node-category">
+        <option value="" selected>All categories</option>
+      </select>
+    </div>
+    <span class="line"></span>
+    <div>
+      <button id="reset-btn">Reset filters</button>
+      <button id="export-btn">Export</button>
+    </div>
+    <div id="dump" class="hidden"></div>
+  </div>
+</div>
+<script>
+/**
+ * This is an example on how to use sigma filters plugin on a real-world graph.
+ */
+var filter;
+
+/**
+ * DOM utility functions
+ */
+var _ = {
+  $: function (id) {
+    return document.getElementById(id);
+  },
+
+  all: function (selectors) {
+    return document.querySelectorAll(selectors);
+  },
+
+  removeClass: function(selectors, cssClass) {
+    var nodes = document.querySelectorAll(selectors);
+    var l = nodes.length;
+    for ( i = 0 ; i < l; i++ ) {
+      var el = nodes[i];
+      // Bootstrap compatibility
+      el.className = el.className.replace(cssClass, '');
+    }
+  },
+
+  addClass: function (selectors, cssClass) {
+    var nodes = document.querySelectorAll(selectors);
+    var l = nodes.length;
+    for ( i = 0 ; i < l; i++ ) {
+      var el = nodes[i];
+      // Bootstrap compatibility
+      if (-1 == el.className.indexOf(cssClass)) {
+        el.className += ' ' + cssClass;
+      }
+    }
+  },
+
+  show: function (selectors) {
+    this.removeClass(selectors, 'hidden');
+  },
+
+  hide: function (selectors) {
+    this.addClass(selectors, 'hidden');
+  },
+
+  toggle: function (selectors, cssClass) {
+    var cssClass = cssClass || "hidden";
+    var nodes = document.querySelectorAll(selectors);
+    var l = nodes.length;
+    for ( i = 0 ; i < l; i++ ) {
+      var el = nodes[i];
+      //el.style.display = (el.style.display != 'none' ? 'none' : '' );
+      // Bootstrap compatibility
+      if (-1 !== el.className.indexOf(cssClass)) {
+        el.className = el.className.replace(cssClass, '');
+      } else {
+        el.className += ' ' + cssClass;
+      }
+    }
+  }
+};
+
+
+function updatePane (graph, filter) {
+  // get max degree
+  var maxDegree = 0,
+      categories = {};
+
+  // read nodes
+  graph.nodes().forEach(function(n) {
+    maxDegree = Math.max(maxDegree, graph.degree(n.id));
+    categories[n.attributes.category] = true;
+  })
+
+  // min degree
+  _.$('min-degree').max = maxDegree;
+  _.$('max-degree-value').textContent = maxDegree;
+
+  // node category
+  var nodecategoryElt = _.$('node-category');
+  Object.keys(categories).forEach(function(c) {
+    var optionElt = document.createElement("option");
+    optionElt.text = c;
+    nodecategoryElt.add(optionElt);
+  });
+
+  // reset button
+  _.$('reset-btn').addEventListener("click", function(e) {
+    _.$('min-degree').value = 0;
+    _.$('min-degree-val').textContent = '0';
+    _.$('node-category').selectedIndex = 0;
+    filter.undo().apply();
+    _.$('dump').textContent = '';
+    _.hide('#dump');
+  });
+
+  // export button
+  _.$('export-btn').addEventListener("click", function(e) {
+    var chain = filter.export();
+    console.log(chain);
+    _.$('dump').textContent = JSON.stringify(chain);
+    _.show('#dump');
+  });
+}
+
+// Initialize sigma with the dataset
+sigma.parsers.gexf('data/finalGraph.gexf', {
+  container: 'graph-container',
+  settings: {
+    edgeColor: 'default',
+    defaultEdgeColor: '#ccc'
+  }
+}, function(s) {/////////////////////////////
+  // Initialize the Filter API
+  filter = new sigma.plugins.filter(s);
+
+  updatePane(s.graph, filter);
+
+  function applyMinDegreeFilter(e) {
+    var v = e.target.value;
+    _.$('min-degree-val').textContent = v;
+
+    filter
+      .undo('min-degree')
+      .nodesBy(function(n) {
+        return this.degree(n.id) >= v;
+      }, 'min-degree')
+      .apply();
+  }
+
+  function applyCategoryFilter(e) {
+    var c = e.target[e.target.selectedIndex].value;
+    filter
+      .undo('node-category')
+      .nodesBy(function(n) {
+        return !c.length || n.attributes.category === c;
+      }, 'node-category')
+      .apply();
+  }
+
+  function customFilter(index) {
+    var elem = document.getElementById('node-category');
+    elem.selectedIndex = index;
+    var c = elem[index].value;
+    filter
+      .undo('node-category')
+      .nodesBy(function(n) {
+        return !c.length || n.attributes.category === c;
+      }, 'node-category')
+      .apply();
+  }
+  //customFilter(1);
+
+  _.$('min-degree').addEventListener("input", applyMinDegreeFilter);  // for Chrome and FF
+  _.$('min-degree').addEventListener("change", applyMinDegreeFilter); // for IE10+, that sucks
+  _.$('node-category').addEventListener("change", applyCategoryFilter);
+});///////////////////
+
+
+
+</script>
+
+      <div class="row">
+        <div class="col-md-9">
+          <h2 class="subhead" id="addnotes">Additional Notes</h2>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-1">
+          <img src="imgs/user-icon.png" alt="user-icon" id="user-icon">
+        </div>
+        <div class="col-md-8">
+            <p class="body"><b>Devan</b></p>
+            <p class="body" id="comment">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.</p>
+          <p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-1">
+          <img src="imgs/Chad.png" alt="Chad-icon" id="user-icon">
+        </div>
+        <div class="col-md-8">
+            <p class="body"><b>Chad</b></p>
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Leave a comment">
+                <span class="input-group-btn">
+                  <button class="btn btn-default" type="button" id="submit">Submit</button>
+                </span>
+              </div>
+      </div>
+
+
+    </div>
+  </div>

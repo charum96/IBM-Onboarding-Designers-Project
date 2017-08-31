@@ -1,0 +1,120 @@
+@font-face {
+  font-family: HelvNeueforIBM;
+  src: url('HelvNeueRomanItalicforIBM.otf');
+}
+body{
+  font-family: HelvNeueforIBM sans-serif;
+}
+#search-container{
+  width:80%;
+  padding-left: 30px;
+}
+#search{
+  border: none;
+  background-color: inherit;
+  box-shadow: none;
+  border-radius: 0px;
+  color:white;
+  height:auto;
+  width: 800px;
+}
+.form-group{
+  border-bottom: 2px solid white;
+}
+#search::placeholder, #search{
+  color:white;
+  font-weight: bold;
+  font-size: 30px;
+}
+button{
+    border: none;
+    background-color: #3993ff;
+}
+#star-btn{
+  background-color: white;
+  border: 0px;
+  float: right;
+  display: block;
+  margin: auto;
+}
+#star{
+  width:50px;
+}
+#search-btn, #user-btn{
+  background-color: white;
+  border-radius: 50%;
+  border: 0px;
+  padding:10px;
+}
+.user{
+  width:50px;
+  float: right;
+  display: block;
+  margin: auto;
+}
+#user-icon{
+  width:50px;
+  display: inline;
+}
+#star-container{
+  padding-top: 20px;
+}
+#navbar{
+  background-color: #3993ff;
+  border:0px;
+}
+#logo{
+  color:white;
+}
+#logo:hover{
+  text-decoration: underline;
+}
+.container{
+  margin:5%;
+}
+.circle-btn{
+  border-radius: 10px;
+}
+#top{
+  margin-top: 25%;
+  margin-bottom: 50px;
+}
+.title{
+  font-size: 70px;
+  font-weight: bold;
+  padding-bottom: 30px;
+}
+.subhead{
+  font-size: 30px;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+.body, .sfl{
+  font-size: 22px;
+}
+.sfl{
+  display: inline;
+  padding-left: 50px;
+  font-size: 16px;
+}
+#navbar-default{
+  border:none
+}
+#comment{
+  font-size: 16px;
+}
+#comment, #addnotes{
+  margin-bottom: 30px;
+}
+.links, .links:active, .links:hover{
+  color:#3993ff;
+  font-weight: bold;
+}
+.links:hover{
+  border-bottom: 3px solid #3993ff;
+  text-decoration: none;
+}
+iframe, .image{
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
